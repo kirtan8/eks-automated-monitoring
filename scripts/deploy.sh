@@ -30,16 +30,16 @@ fi
 
 # EDIT THIS:
 #------------------------------------------------------------------------------#
-CLUSTER_VERSION=1.28
+CLUSTER_VERSION=1.32
 NUM_WORKER_NODES=3
 WORKER_NODES_INSTANCE_TYPE=t2.medium
 STACK_NAME=test-cluster
-KEY_PAIR_NAME=eks-us-east-1
+#KEY_PAIR_NAME=eks-us-east-1
 CWADDONVERSION=v1.5.5-eksbuild.1
 S3_BUCKET_NAME=eks-dynamic-node-alarms
-REGION=us-east-1
+REGION=ap-south-1
 ENV=dev
-SNS_EMAIL=<Provide Email Address>
+SNS_EMAIL=kscariappa8@gmail.com
 TF_ROLE="<Provide IAM Role ARN to launch AWS Resources>"
 TF_STATE_KEY="cloudwatch-insights/terraform.state"
 ACCOUNT_ID=$(aws sts get-caller-identity --query "Account" --output text)
